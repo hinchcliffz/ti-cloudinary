@@ -19,7 +19,7 @@ Import the initializer before you create your app, e.g.
 
 ## Usage
 
-```js
+```handlebars
   {{#ti-resized-background-img src="srcUrlHere" width=100 height=300 crop="fit"}}
     content goes here
   {{/ti-resized-background-img}}
