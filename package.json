@@ -1,7 +1,7 @@
 {
   "name": "ti-cloudinary",
   "description": "Simple components for cloudinary images.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "author": "Chris McC",
   "license": "MIT",

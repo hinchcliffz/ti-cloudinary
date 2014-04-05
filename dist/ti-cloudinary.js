@@ -72,6 +72,7 @@ define("ti-cloudinary",
       }.property('resizedSrc')
     });
 
+    __exports__.resizedSrc = resizedSrc;
     __exports__.ResizedImgComponent = ResizedImgComponent;
     __exports__.ResizedBackgroundImgComponent = ResizedBackgroundImgComponent;
   });
