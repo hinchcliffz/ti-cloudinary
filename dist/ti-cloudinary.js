@@ -21,7 +21,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   return buffer;
   
 }); });
-define("ti-cloudinary", 
+define("ti-cloudinary",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -54,7 +54,7 @@ define("ti-cloudinary",
 
         transformation = query.join(',');
 
-        return this.get('src').replace(/upload\//, 'upload/' + transformation + '/');
+        return this.get('src').replace(/\/v(\d+)/, '/' + transformation + '/v$1');
       }
     };
 
@@ -76,7 +76,7 @@ define("ti-cloudinary",
     __exports__.ResizedImgComponent = ResizedImgComponent;
     __exports__.ResizedBackgroundImgComponent = ResizedBackgroundImgComponent;
   });
-define("ti-cloudinary/initializer", 
+define("ti-cloudinary/initializer",
   ["templates/ti-resized-img","templates/ti-resized-background-img","ti-cloudinary","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
